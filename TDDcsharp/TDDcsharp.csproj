@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- no front end, excluded output type, project to demonstrate testing only -->
+        <!-- <OutputType>Exe</OutputType> -->
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+</Project>
