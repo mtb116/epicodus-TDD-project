@@ -4,12 +4,20 @@ using TDDcsharp;
 namespace TDDcsharp.Tests
 {
     [TestClass]
-    public class CarDealership
+    public class CarDealershipTests
     {
         [TestMethod]
-        public void isCar_StringEqualCar_True()
+        public void isCar_StringEqualCarThing_True()
         {
-            // testing code goes here
+            CarDealership testCarDealership = new CarDealership();
+            Assert.AreEqual(true, testCarDealership.isCar("4 wheels"));
+        }
+
+        [TestMethod]
+        public void isCar_StringNotEqualCarThings_False()
+        {
+            CarDealership testCarDealership = new CarDealership();
+            Assert.AreEqual(false, testCarDealership.isCar("horse"));
         }
     }
 }
